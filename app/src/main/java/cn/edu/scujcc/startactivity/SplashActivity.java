@@ -30,7 +30,7 @@ public class SplashActivity extends AppCompatActivity {
 //                        // 这里可以睡几秒钟，如果要放广告的话 3000是毫秒，代表的是3秒
 //                        sleep(3000);
 //                        // 1秒后自动跳转到主页
-//                        Intent intent =new Intent(SplashActivity.this,MainActivity.class);
+//                        Intent intent =new Intent(SplashActivity.this,LoginActivity.class);
 //                        startActivity(intent);
 //                        finish();
 //                    }
@@ -45,7 +45,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // 点击后执行的操作
-                Intent intent =new Intent(SplashActivity.this,MainActivity.class);
+                Intent intent =new Intent(SplashActivity.this,LoginActivity.class);
                 startActivity(intent);
                 finish();
             }

@@ -4,6 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/bg_login"
+    android:layout_marginTop="-3dp"
     tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/ic_login_icon"/>
+
+
+    <EditText
+        android:id="@+id/ev_account"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="390dp"
+        android:hint="请输入您的账号"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/mainColor"
+        />
+
+
+    <EditText
+        android:id="@+id/ev_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ev_account"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:hint="请输入您的密码"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/mainColor"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/lin_mume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ev_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textSize="16dp"
+            android:textColor="@color/mainColor"
+            android:layout_marginLeft="60dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="忘记密码"
+            android:textSize="16dp"
+            android:gravity="right"
+            android:layout_marginRight="60dp"
+            android:textColor="@color/mainColor"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        android:text="登录"
+        app:layout_constraintTop_toBottomOf="@+id/lin_mume"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:background="@drawable/bt_login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册登录即代表同意《用户协议》和《隐私政策》"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="30dp"
+        android:textSize="12dp"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
