@@ -38,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //跳转页面
-                Intent intent =new Intent(LoginActivity.this,MainActivity.class);
+                Intent intent =new Intent(LoginActivity.this,MuneActivity.class);
                 startActivity(intent);
             }
         });
