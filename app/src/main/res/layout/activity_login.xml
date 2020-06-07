@@ -15,18 +15,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:src="@mipmap/ic_login_icon"/>
 
 
     <EditText
         android:id="@+id/ev_account"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="390dp"
+        android:layout_marginTop="400dp"
         android:hint="请输入您的账号"
         android:gravity="center"
         android:textSize="18dp"
@@ -36,8 +38,10 @@
 
     <EditText
         android:id="@+id/ev_password"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ev_account"
@@ -60,13 +64,14 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
+            android:id="@+id/tv_register"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="注册"
             android:textSize="16dp"
             android:textColor="@color/mainColor"
-            android:layout_marginLeft="60dp"
+            android:layout_marginLeft="70dp"
             />
 
         <TextView
@@ -76,7 +81,7 @@
             android:text="忘记密码"
             android:textSize="16dp"
             android:gravity="right"
-            android:layout_marginRight="60dp"
+            android:layout_marginRight="70dp"
             android:textColor="@color/mainColor"
             />
 
@@ -84,6 +89,7 @@
 
 
     <Button
+        android:id="@+id/bt_login"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"

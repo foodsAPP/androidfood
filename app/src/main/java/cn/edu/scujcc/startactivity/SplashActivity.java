@@ -44,7 +44,7 @@ public class SplashActivity extends AppCompatActivity {
         tvOver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // 点击后执行的操作
+                // 点击后执行的跳转页面操作
                 Intent intent =new Intent(SplashActivity.this,LoginActivity.class);
                 startActivity(intent);
                 finish();
