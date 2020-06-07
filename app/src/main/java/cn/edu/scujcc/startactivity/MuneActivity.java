@@ -78,6 +78,13 @@ public class MuneActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        evSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(MuneActivity.this,SerchActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // 绑定监听事件（清楚搜索数据）
         imClear.setOnClickListener(new View.OnClickListener() {
