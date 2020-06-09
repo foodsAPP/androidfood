@@ -11,21 +11,24 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.textfield.TextInputLayout;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
 public class LoginActivity extends AppCompatActivity {
     private String user;
+    private TextInputLayout LoginUsername;
+    private TextInputLayout LoginPassword;
     private static final String TAG = "COOKBOOK";
     private  final DateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     private UserLab lab=UserLab.getInstance();
     private MyPreference preference=MyPreference.getInstance();
     private TextView tvRegister;
-    private Button btLogin;
+    private Button LoginButton;
     private Handler handler=new Handler(){
         @Override
         public void handleMessage(@NonNull Message msg) {
@@ -93,14 +96,14 @@ public class LoginActivity extends AppCompatActivity {
 //        });
 
         // 绑定试图中的ID
-        btLogin=findViewById(R.id.bt_login);
-        btLogin.setOnClickListener(v->{
-           EditText LoginUsername=findViewById(R.id.ev_name);
-            EditText LoginPassword=findViewById(R.id.ev_password);
-            user=LoginUsername.getText().toString();
-            String p=LoginPassword.getText().toString();
+        LoginButton=findViewById(R.id.ev_register);
+        LoginButton.setOnClickListener(v->{
+            LoginUsername=findViewById(R.id.username);
+            LoginPassword=findViewById(R.id.password1);
+            user=LoginUsername.getEditText().getText().toString();
+            String p=LoginPassword.getEditText().getText().toString();
             lab.login(user,p,handler);
-            Button registerinstant=findViewById(R.id.bt_login);
+            Button registerinstant=findViewById(R.id.ev_register);
             registerinstant.setOnClickListener(new  View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

@@ -4,4 +4,19 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="checkpassword">确认密码</string>
+    <string name="log">登录</string>
+    <string name="zhuce">注册用户</string>
+    <string name="wangjimima">忘记密码</string>
+    <string name="grander">性别</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="baomi">保密</string>
+    <string name="berthriday">生日</string>
+    <string name="tellphone">手机号</string>
+    <string name="loginstant">立即注册</string>
+    <string name="brithdaytitle">请选择你的生日</string>
+    <string name="jieshi">注册登录即代表同意《用户协议》和《隐私政策》</string>
 </resources>

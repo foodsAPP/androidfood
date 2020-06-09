@@ -10,107 +10,144 @@
 
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="50dp"
-        android:src="@mipmap/ic_login_icon"/>
-
-
-    <EditText
-        android:id="@+id/ev_account"
-        android:layout_width="match_parent"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_login_icon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="400dp"
-        android:hint="请输入您的账号"
-        android:gravity="center"
-        android:textSize="18dp"
-        android:textColor="@color/mainColor"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-    <EditText
-        android:id="@+id/ev_password"
-        android:layout_width="match_parent"
+
+<!--    <EditText-->
+<!--        android:id="@+id/ev_account"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginLeft="60dp"-->
+<!--        android:layout_marginRight="60dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:layout_marginTop="400dp"-->
+<!--        android:hint="请输入您的账号"-->
+<!--        android:gravity="center"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textColor="@color/mainColor"-->
+<!--        />-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/ev_password"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="60dp"-->
+<!--        android:layout_marginRight="60dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/ev_account"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        android:hint="请输入您的密码"-->
+<!--        android:gravity="center"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textColor="@color/mainColor"-->
+<!--        />-->
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/l_username"
+        android:layout_width="499dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginTop="150dp"
+        android:hint="@string/username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ev_account"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="50dp"
-        android:hint="请输入您的密码"
-        android:gravity="center"
-        android:textSize="18dp"
-        android:textColor="@color/mainColor"
-        />
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_person_black_24dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:hint="hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/l_password"
+        android:layout_width="499dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/ic_https_black_24dp"
+        app:layout_constraintTop_toBottomOf="@+id/l_username">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:hint="hint" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
         android:id="@+id/lin_mume"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/ev_password"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l_password">
 
         <TextView
             android:id="@+id/tv_register"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="注册"
-            android:textSize="16dp"
-            android:textColor="@color/mainColor"
             android:layout_marginLeft="70dp"
-            />
+            android:layout_weight="1"
+            android:text="注册"
+            android:textColor="@color/mainColor"
+            android:textSize="16dp" />
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="忘记密码"
-            android:textSize="16dp"
-            android:gravity="right"
             android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="忘记密码"
             android:textColor="@color/mainColor"
-            />
+            android:textSize="16dp" />
 
     </LinearLayout>
 
-
     <Button
         android:id="@+id/bt_login"
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="60dp"
-        android:text="登录"
-        app:layout_constraintTop_toBottomOf="@+id/lin_mume"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bt_login"
+        android:text="@string/log"
         android:textColor="@color/white"
         android:textSize="18dp"
-        android:background="@drawable/bt_login"/>
+        app:layout_constraintEnd_toEndOf="@+id/lin_mume"
+        app:layout_constraintStart_toStartOf="@+id/lin_mume"
+        app:layout_constraintTop_toBottomOf="@+id/lin_mume" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="注册登录即代表同意《用户协议》和《隐私政策》"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="100dp"
+        android:text="@string/jieshi"
+        android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="30dp"
-        android:textSize="12dp"
-        />
-
+        app:layout_constraintTop_toBottomOf="@+id/bt_login" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

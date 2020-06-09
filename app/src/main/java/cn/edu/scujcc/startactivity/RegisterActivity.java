@@ -74,19 +74,18 @@ public class RegisterActivity extends AppCompatActivity {
 //        });
     }
     private  void register(){
-        //获取用户名
         User u=new User();
         boolean pass=false;
-        EditText loginUsername=findViewById(R.id.ev_name);
-        Editable username=loginUsername.getText();
+        TextInputLayout loginUsername=findViewById(R.id.username);
+        Editable username=loginUsername.getEditText().getText();
         u.setUsername(username!=null ? username.toString() : "");
 
         //获取密码
         // 获取确认密码
-        EditText PasswordInput1=findViewById(R.id.ev_password);
-        Editable password1=PasswordInput1.getText();
-        EditText passwordInput2=findViewById(R.id.ev_password2);
-        Editable password2=passwordInput2.getText();
+        TextInputLayout PasswordInput1=findViewById(R.id.password1);
+        Editable password1=PasswordInput1.getEditText().getText();
+        TextInputLayout passwordInput2=findViewById(R.id.password2);
+        Editable password2=passwordInput2.getEditText().getText();
         if (password1!=null && password2!=null){
             if (password1.toString()!= password2.toString()){
                 pass=true;
@@ -97,8 +96,8 @@ public class RegisterActivity extends AppCompatActivity {
         }
 
         //获取电话号码
-        EditText tellphone=findViewById(R.id.ev_phone);
-        Editable tell=tellphone.getText();
+        TextInputLayout  tellphone=findViewById(R.id.t_phone);
+        Editable tell=tellphone.getEditText().getText();
         u.setPhone(tell!=null ? tell.toString():"");
     }
 }

@@ -7,8 +7,6 @@
     android:layout_marginTop="-3dp"
     android:background="@drawable/bg_register"
     tools:context=".RegisterActivity">
-
-
 <!--    <ImageView-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
@@ -57,105 +55,189 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/text_cook1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autoSizeMaxTextSize="5dp"
+        android:background="@drawable/bg_up_head"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
         android:text="食客一号"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lin_head"
-        android:layout_marginTop="20dp"
-        android:autoSizeMaxTextSize="5dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:background="@drawable/bg_up_head"/>
+        app:layout_constraintTop_toBottomOf="@+id/lin_head" />
 
-    <EditText
-        android:id="@+id/ev_name"
-        android:layout_width="match_parent"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
+<!--    <EditText-->
+<!--        android:id="@+id/ev_name"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginLeft="60dp"-->
+<!--        android:layout_marginRight="60dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:layout_marginTop="400dp"-->
+<!--        android:hint="请输入您的昵称"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        android:gravity="center"-->
+<!--        android:textSize="18dp"-->
+<!--        android:theme="@style/MyEditText"-->
+<!--        android:textColor="@color/white"-->
+<!--        />-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/ev_password"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="60dp"-->
+<!--        android:layout_marginRight="60dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/ev_name"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        android:hint="请输入密码"-->
+<!--        android:theme="@style/MyEditText"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        android:gravity="center"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/ev_password2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="60dp"-->
+<!--        android:layout_marginRight="60dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/ev_password"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        android:theme="@style/MyEditText"-->
+<!--        android:hint="请再次确认密码"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        android:gravity="center"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/ev_phone"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="60dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginRight="60dp"-->
+<!--        android:gravity="center"-->
+<!--        android:hint="请输入手机号"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        android:textSize="18dp"-->
+<!--        android:theme="@style/MyEditText"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/ev_password2" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        android:hint="@string/username"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_person_black_24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="400dp"
-        android:hint="请输入您的昵称"
-        android:textColorHint="@color/white"
-        android:gravity="center"
-        android:textSize="18dp"
-        android:theme="@style/MyEditText"
-        android:textColor="@color/white"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/text_cook1"
 
+        >
 
-    <EditText
-        android:id="@+id/ev_password"
-        android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="hint"
+            android:imeOptions="actionNext"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password1"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginTop="24dp"
+        android:inputType="textPassword"
+        android:hint="@string/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ev_name"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="50dp"
-        android:hint="请输入密码"
-        android:theme="@style/MyEditText"
-        android:textColorHint="@color/white"
-        android:gravity="center"
-        android:textSize="18dp"
-        android:textColor="@color/white"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:startIconDrawable="@drawable/ic_https_black_24dp">
 
-    <EditText
-        android:id="@+id/ev_password2"
-        android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:hint="hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password2"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/checkpassword"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ev_password"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="50dp"
-        android:theme="@style/MyEditText"
-        android:hint="请再次确认密码"
-        android:textColorHint="@color/white"
-        android:gravity="center"
-        android:textSize="18dp"
-        android:textColor="@color/white"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/password1"
+        app:startIconDrawable="@drawable/ic_https_black_24dp">
 
-    <EditText
-        android:id="@+id/ev_phone"
-        android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:hint="hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/t_phone"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="60dp"
-        android:gravity="center"
-        android:hint="请输入手机号"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textSize="18dp"
-        android:theme="@style/MyEditText"
+        android:layout_marginTop="24dp"
+        android:hint="@string/tellphone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ev_password2" />
+        app:layout_constraintTop_toBottomOf="@+id/password2"
+        android:inputType="number"
+        android:isScrollContainer="false"
+        app:startIconDrawable="@drawable/ic_phone_black_24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:hint="hint" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/ev_register"
-        android:layout_width="150dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
         android:background="@drawable/bt_reginster"
-        android:text="注册"
+        android:text="@string/loginstant"
         android:textColor="@color/mainColor"
-        android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ev_phone" />
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/t_phone"
+        app:layout_constraintStart_toStartOf="@+id/t_phone"
+        app:layout_constraintTop_toBottomOf="@+id/t_phone" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
