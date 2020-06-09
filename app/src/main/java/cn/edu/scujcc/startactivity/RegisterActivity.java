@@ -5,10 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageView;
 
-public class RegisterActivity extends AppCompatActivity {
+import com.google.android.material.textfield.TextInputLayout;
 
+import java.util.Date;
+
+public class RegisterActivity extends AppCompatActivity {
+    private static final String TAG = "COOKBOOK";
+    private static UserLab INSTANCE;
+    private UserLab lab=UserLab.getInstance();
+    private Button loginstant;
+    private TextInputLayout brithdayInput;
+    private Date brith = new Date();
     private ImageView imBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
