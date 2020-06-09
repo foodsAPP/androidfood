@@ -21,14 +21,13 @@ import java.text.SimpleDateFormat;
 
 public class LoginActivity extends AppCompatActivity {
     private String user;
+    private Button LoginButton;
     private TextInputLayout LoginUsername;
     private TextInputLayout LoginPassword;
     private static final String TAG = "COOKBOOK";
     private  final DateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     private UserLab lab=UserLab.getInstance();
     private MyPreference preference=MyPreference.getInstance();
-    private TextView tvRegister;
-    private Button LoginButton;
     private Handler handler=new Handler(){
         @Override
         public void handleMessage(@NonNull Message msg) {
@@ -96,15 +95,15 @@ public class LoginActivity extends AppCompatActivity {
 //        });
 
         // 绑定试图中的ID
-        LoginButton=findViewById(R.id.ev_register);
+        LoginButton=findViewById(R.id.bt_login);
         LoginButton.setOnClickListener(v->{
-            LoginUsername=findViewById(R.id.username);
-            LoginPassword=findViewById(R.id.password1);
+            LoginUsername=findViewById(R.id.l_username);
+            LoginPassword=findViewById(R.id.l_password);
             user=LoginUsername.getEditText().getText().toString();
             String p=LoginPassword.getEditText().getText().toString();
             lab.login(user,p,handler);
-            Button registerinstant=findViewById(R.id.ev_register);
-            registerinstant.setOnClickListener(new  View.OnClickListener() {
+            TextView registerinstant=findViewById(R.id.tv_register);
+            registerinstant.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent=new Intent(LoginActivity.this,RegisterActivity.class);
