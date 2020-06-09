@@ -4,10 +4,6 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import org.springframework.data.annotation.Id;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 /**
  * ����ģ����
  * @author ASUS
@@ -16,8 +12,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 public class Cookbook implements Serializable {
 	
 	private static final long serialVersionUID = 8113986652205866086L;
-	
-	@Id
+
 	private String id;
 	private String title;
 	private String cover; //���׷���
@@ -39,8 +34,6 @@ public class Cookbook implements Serializable {
 	public void setStep(List<Step> step) {
 		this.steps = step;
 	}
-	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-	private LocalDateTime dt = LocalDateTime.now(); //�����ϴ�ʱ��
 
 	public String getId() {
 		return id;
@@ -78,12 +71,7 @@ public class Cookbook implements Serializable {
 	public void setComments(List<Comment> comments) {
 		this.comments = comments;
 	}
-	public LocalDateTime getDt() {
-		return dt;
-	}
-	public void setDt(LocalDateTime dt) {
-		this.dt = dt;
-	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -91,8 +79,7 @@ public class Cookbook implements Serializable {
 		result = prime * result + ((comments == null) ? 0 : comments.hashCode());
 		result = prime * result + ((cover == null) ? 0 : cover.hashCode());
 		result = prime * result + cstar;
-		result = prime * result + ((dt == null) ? 0 : dt.hashCode());
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
+
 		result = prime * result + ((maked == null) ? 0 : maked.hashCode());
 		result = prime * result + ((title == null) ? 0 : title.hashCode());
 		return result;
@@ -118,11 +105,7 @@ public class Cookbook implements Serializable {
 			return false;
 		if (cstar != other.cstar)
 			return false;
-		if (dt == null) {
-			if (other.dt != null)
-				return false;
-		} else if (!dt.equals(other.dt))
-			return false;
+
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -144,7 +127,7 @@ public class Cookbook implements Serializable {
 	public String toString() {
 		return "Cookbook [id=" + id + ", title=" + title + ", cover=" + cover + ", maked=" + maked + ", cstar=" + cstar
 				+ ", comments=" + comments + ", contents=" + ", material=" + materials + ", step=" + steps
-				+ ", dt=" + dt + "]";
+				+ "]";
 	}
 	
 	

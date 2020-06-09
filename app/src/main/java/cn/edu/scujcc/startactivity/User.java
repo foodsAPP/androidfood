@@ -1,11 +1,10 @@
 package cn.edu.scujcc.startactivity;
 
 import java.io.Serializable;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.springframework.data.annotation.Id;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
 
 /**
  * 用户模型类。
@@ -15,15 +14,14 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 public class User implements Serializable {
 	private static final long serialVersionUID = 8425746230705180748L;
 	public static final String CACHE_NAME = "users";
-	@Id
+	private  final DateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
 	private String id;
 	private String username;
 	private String password;
 	private String phone;
 	private String gender;
-	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	private Date birthday;
-	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	private Date lastLogin;
 	private String lastIp;
 	public String getId() {
