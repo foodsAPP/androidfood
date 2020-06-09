@@ -1,6 +1,7 @@
 package cn.edu.scujcc.startactivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +15,7 @@ import java.util.TimerTask;
 public class MainActivity extends AppCompatActivity {
 
     private TextView tvOver;
-
+    private RecyclerView channelRV;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);;//去掉标题栏
