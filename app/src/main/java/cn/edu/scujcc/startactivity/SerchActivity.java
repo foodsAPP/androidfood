@@ -32,7 +32,7 @@ public class SerchActivity extends AppCompatActivity {
 
         //设置搜索方法
         searchView.setSearchWay(new SearchView.SearchWay<String>(){
-
+//程序报错
             @Override
             public List<String> getData() {
                 //返回数据源

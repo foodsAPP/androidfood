@@ -9,8 +9,11 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class LoginActivity extends AppCompatActivity {
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 
+public class LoginActivity extends AppCompatActivity {
+    private  final DateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     private TextView tvRegister;
     private Button btLogin;
     @Override
