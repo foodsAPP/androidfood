@@ -150,14 +150,14 @@
         android:layout_height="200dp">
 
         <TextView
-            android:id="@+id/cookbook_title"
+            android:id="@+id/cookbook_titles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="TextView"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/cookbook_img"
+            app:layout_constraintStart_toEndOf="@+id/cookbook_url"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -168,11 +168,11 @@
             android:text="TextView"
             android:textColor="#2196F3"
             android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@id/cookbook_title"
-            app:layout_constraintTop_toBottomOf="@id/cookbook_title" />
+            app:layout_constraintStart_toStartOf="@id/cookbook_titles"
+            app:layout_constraintTop_toBottomOf="@id/cookbook_titles" />
 
         <ImageView
-            android:id="@+id/cookbook_img"
+            android:id="@+id/cookbook_url"
             android:layout_width="200dp"
             android:layout_height="150dp"
             android:layout_marginTop="8dp"

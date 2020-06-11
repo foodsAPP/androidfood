@@ -36,8 +36,8 @@ public class MuneActivity extends AppCompatActivity {
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);;//去掉标题栏
         setContentView(R.layout.activity_mune);
 
-        //绑定
-        gridView=findViewById(R.id.gridView);
+//        //绑定
+//        gridView=findViewById(R.id.cookbook_cstar);
         imAdd=findViewById(R.id.im_add);
         imSearch=findViewById(R.id.im_search);
         imClear=findViewById(R.id.im_clear);

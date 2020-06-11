@@ -31,7 +31,7 @@ private Context context;
     @NonNull
     @Override
     public ChannelRowHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View rowView= LayoutInflater.from(parent.getContext()).inflate(R.layout.channel_row,parent,false);
+        View rowView= LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_mune,parent,false);
         ChannelRowHolder holder=new ChannelRowHolder(rowView);
         return holder;
     }
@@ -75,9 +75,9 @@ private Context context;
         public ChannelRowHolder(@NonNull View row) {
             super(row);
             this.cstar=row.findViewById(R.id.cookbook_cstar);
-            this.title=row.findViewById(R.id.cookbook_title);
+            this.title=row.findViewById(R.id.cookbook_titles);
             this.maked=row.findViewById(R.id.cookbook_maked);
-            this.cover=row.findViewById(R.id.cookbook_img);
+            this.cover=row.findViewById(R.id.cookbook_url);
             row.setOnClickListener((v)->{
                 int position=getAdapterPosition();
                 Log.d(TAG,position+"行被点击了");
