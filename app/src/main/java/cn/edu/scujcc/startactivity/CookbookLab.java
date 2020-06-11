@@ -33,42 +33,6 @@ public class CookbookLab {
         }
         return  INSTANCE;
     }
-//    public void test(){
-//        date=new ArrayList<>();
-//        Channel c =new Channel();
-//        c.setTitle("中央一台 综合频道");
-//        c.setQuality("1080p");
-//        c.setCctv(R.drawable.img2);
-//        c.setUrl("http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8");
-//        date.add(c);
-//        c=new Channel();
-//        c.setTitle("中央二台 财经频道");
-//        c.setQuality("1080p");
-//        c.setCctv(R.drawable.img3);
-//        c.setUrl("http://ivi.bupt.edu.cn/hls/cctv2hd.m3u8");
-//        date.add(c);
-//        c=new Channel();
-//        c.setTitle("中央三台 综艺频道");
-//        c.setQuality("1080p");
-//        c.setCctv(R.drawable.img3);
-//        c.setUrl("http://ivi.bupt.edu.cn/hls/cctv3hd.m3u8");
-//        date.add(c);
-//        c=new Channel();
-//        c.setTitle("中央四台 动画频道");
-//        c.setQuality("1080p");
-//        c.setCctv(R.drawable.img4);
-//        c.setUrl("http://ivi.bupt.edu.cn/hls/cctv4hd.m3u8");
-//        date.add(c);
-//        for (int i=0;i<10;i++){
-//            c=new Channel();
-//            c.setTitle("中央五台 体育频道");
-//            c.setQuality("1080p");
-//            c.setCctv(R.drawable.img5);
-//            c.setUrl("http://ivi.bupt.edu.cn/hls/cctv5phd.m3u8");
-//            date.add(c);
-//        }
-//
-//    }
     public int getSize(){
         return date.size();
     }

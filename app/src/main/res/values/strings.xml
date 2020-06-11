@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">StartActivity</string>
+    <string name="app_name">万食</string>
     <string name="title_activity_menu">MenuActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>

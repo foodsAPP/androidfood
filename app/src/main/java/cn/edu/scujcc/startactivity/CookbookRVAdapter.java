@@ -43,15 +43,8 @@ private Context context;
      */
     @Override
     public void onBindViewHolder(@NonNull ChannelRowHolder holder, int position) {
-
-//        holder.bind("中央1台","1080p",R.drawable.cctv);
         Cookbook c=lab.getChannel(position);
         holder.bind(c);
-        //    Glide.with(context).load(url).placeholder(R.mipmap.ic_launcher)
-        //    .diskCacheStrategy(DiskCacheStrategy.RESULT)
-//    //.bitmapTransform(new CropCircleTransformation(mContext))
-// 如果想使用变换效果，这个注释可以打开
-//        .into(imageview);
     }
 
     /**
