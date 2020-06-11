@@ -103,7 +103,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/material"
+            android:id="@+id/cbit-materialblock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -121,7 +121,7 @@
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/material">
+            app:layout_constraintTop_toBottomOf="@+id/cbit-materialblock">
 
             <EditText
                 android:id="@+id/material-add"
