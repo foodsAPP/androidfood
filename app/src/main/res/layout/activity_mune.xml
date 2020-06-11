@@ -19,6 +19,10 @@
             android:id="@+id/lin_top"
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -125,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="推荐菜谱"
+                android:text="食材食谱"
                 android:textSize="16dp" />
 
         </LinearLayout>
@@ -134,70 +138,81 @@
     <!--    内容-->
 
     <!--    内容-->
+
+    <!--    底部-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cookbook1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/headtitle">
 
 
-            <ImageView
-                android:id="@+id/cookbook_url"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/img1" />
+        <ImageView
+            android:id="@+id/cookbook_url"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/img1" />
 
-            <TextView
-                android:id="@+id/cookbook_titles"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="TextView"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/cookbook_url"
-                app:layout_constraintTop_toBottomOf="@+id/cookbook_url" />
+        <TextView
+            android:id="@+id/cookbook_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cookbook_url"
+            app:layout_constraintTop_toBottomOf="@+id/cookbook_url" />
 
-            <TextView
-                android:id="@+id/cookbook_maked"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
-                android:text="TextView"
-                android:textColor="#2196F3"
-                android:textSize="12sp"
-                app:layout_constraintStart_toStartOf="@+id/cookbook_titles"
-                app:layout_constraintTop_toBottomOf="@+id/cookbook_titles" />
+        <TextView
+            android:id="@+id/cookbook_cstar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="num"
+            android:textColor="#474747"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-            <TextView
-                android:id="@+id/cookbook_cstar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:text="TextView"
-                app:layout_constraintStart_toEndOf="@+id/cookbook_maked"
-                app:layout_constraintTop_toTopOf="@+id/cookbook_maked" />
+        <ImageView
+            android:id="@+id/cookbook_staricon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/cookbook_cstar"
+            app:layout_constraintEnd_toStartOf="@+id/cookbook_cstar"
+            app:layout_constraintTop_toTopOf="@+id/cookbook_cstar"
+            app:srcCompat="@drawable/ic_thumb_up_black_24dp" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cookbook2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/headtitle">
 
         <ImageView
             android:id="@+id/cookbook_url2"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -210,36 +225,39 @@
             android:id="@+id/cookbook_titles2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
             android:text="TextView"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/cookbook_url2"
             app:layout_constraintTop_toBottomOf="@+id/cookbook_url2" />
-
-        <TextView
-            android:id="@+id/cookbook_maked2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:text="TextView"
-            android:textColor="#2196F3"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/cookbook_titles2"
-            app:layout_constraintTop_toBottomOf="@+id/cookbook_titles2" />
 
         <TextView
             android:id="@+id/cookbook_cstar2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:text="TextView"
-            app:layout_constraintStart_toEndOf="@+id/cookbook_maked2"
-            app:layout_constraintTop_toTopOf="@+id/cookbook_maked2" />
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="num"
+            android:textColor="#474747"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/cookbook_staricon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/cookbook_cstar2"
+            app:layout_constraintEnd_toStartOf="@+id/cookbook_cstar2"
+            app:layout_constraintTop_toTopOf="@+id/cookbook_cstar2"
+            app:srcCompat="@drawable/ic_thumb_up_black_24dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!--    底部-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottom"
         android:layout_width="match_parent"
