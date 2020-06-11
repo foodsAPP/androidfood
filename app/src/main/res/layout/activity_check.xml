@@ -133,7 +133,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cbit_materialblock"
+        android:id="@+id/cbit_materialmianblock"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -153,7 +153,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cbit_materialinblock"
+            android:id="@+id/cbit_materialoneblock"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintTop_toBottomOf="@+id/cbit_materialtext">
@@ -211,7 +211,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbit_materialblock">
+        app:layout_constraintTop_toBottomOf="@+id/cbit_materialmianblock">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cbit_stepinblock"
@@ -419,11 +419,11 @@
                 android:text="num"
                 android:textColor="#000000"
                 android:textSize="12sp"
-                app:layout_constraintEnd_toStartOf="@+id/cbir_commentthumbtext"
-                app:layout_constraintTop_toTopOf="@+id/cbir_commentthumbtext" />
+                app:layout_constraintEnd_toStartOf="@+id/cbit_commentthumbtext"
+                app:layout_constraintTop_toTopOf="@+id/cbit_commentthumbtext" />
 
             <TextView
-                android:id="@+id/cbir_commentthumbtext"
+                android:id="@+id/cbit_commentthumbtext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
