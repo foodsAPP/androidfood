@@ -15,7 +15,6 @@ public class Authinterceptor implements Interceptor {
         Request authRequest=originalRequest.newBuilder()
                 .addHeader("token",preference.token())
                 .build();
-
         return chain.proceed(authRequest);
     }
 }

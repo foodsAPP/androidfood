@@ -32,12 +32,12 @@ public class MyPreference {
     public String currentUser(){
 //        params.get("username", preferences.getString("username", ""));
 //        params.get("token", String.valueOf(preferences.getString("token","" )));
-        return preferences.getString(UserLab.USER_CURRENT,"未登录");
+        return preferences.getString(UserLab.USER_CURRENT,"REGISTER_FALIU");
 
     }
     //读出当前用户
     public  String token(){
-        return preferences.getString(UserLab.USER_TOKEN,"未登录");
+        return preferences.getString(UserLab.USER_TOKEN,"REGISTER_FALIU");
     }
 
 
