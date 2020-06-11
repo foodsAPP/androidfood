@@ -10,7 +10,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 public class UserLab {
-    private final static String TAG="DianDian";
+    private final static String TAG="COOKBOOK";
     private static UserLab INSTANCE;
     public final static int MSG_LOGINSUCCESS=1;
     public final static int MSG_PASSWORD_EORRE=-1;
