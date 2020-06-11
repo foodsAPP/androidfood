@@ -57,7 +57,7 @@ public class MuneActivity1 extends AppCompatActivity {
         list.add(new MuneBean("https://www.fancai.com//Uploads/MeiShi/2018-06-20/5b29bc8910c34.jpg","夏季美味冰淇淋夏季美味冰淇淋夏季美味冰淇淋","67"));
 
 
-        
+
         // 加载适配器
         gridView.setAdapter(new MyAdapter(this));
 
