@@ -16,9 +16,9 @@ import com.bumptech.glide.Glide;
 public class CookbookRVAdapter extends RecyclerView.Adapter<CookbookRVAdapter.ChannelRowHolder> {
     private CookbookLab lab= CookbookLab.getInstance();
 private Context context;
-    private ChannelClikLisenter lisenter;
-    private final static String TAG="DianDian";
-    public CookbookRVAdapter(Context context, ChannelClikLisenter lisenter){
+    private CookClikLisenter lisenter;
+    private final static String TAG="COOKBOOK";
+    public CookbookRVAdapter(Context context, CookClikLisenter lisenter){
         this.lisenter=lisenter;
         this.context=context;
     }
@@ -43,7 +43,7 @@ private Context context;
      */
     @Override
     public void onBindViewHolder(@NonNull ChannelRowHolder holder, int position) {
-        Cookbook c=lab.getChannel(position);
+        Cookbook c=lab.getcook(position);
         holder.bind(c);
     }
 
@@ -53,7 +53,6 @@ private Context context;
      */
     @Override
     public int getItemCount() {
-
         return lab.getSize();
     }
 
@@ -74,7 +73,7 @@ private Context context;
             row.setOnClickListener((v)->{
                 int position=getAdapterPosition();
                 Log.d(TAG,position+"行被点击了");
-                lisenter.onChannelClick(position);
+                lisenter.onCookClick(position);
             });
         }
 
@@ -94,9 +93,11 @@ private Context context;
                     .into(this.cover);
         }
     }
-    public interface ChannelClikLisenter{
-
-        public void onChannelClick(int position);//定义接口
+    public interface CookClikLisenter{
+        public void onCookClick(int position);//定义接口
     }
+//    public interface ChannelClikLisenter{
+//        public void onChannelClick(int position);//定义接口
+//    }
 
 }

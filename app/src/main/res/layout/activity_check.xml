@@ -7,7 +7,7 @@
     tools:context=".CheckActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cbit_coverblock"
+        android:id="@+id/coverblocks"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +40,7 @@
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbit_coverblock">
+        app:layout_constraintTop_toBottomOf="@+id/coverblocks">
 
         <TextView
             android:id="@+id/cbit_title"
@@ -133,7 +133,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cbit_materialblock"
+        android:id="@+id/cbit_materialblocks"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -163,7 +163,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
                 android:text="材料名"
                 app:layout_constraintBottom_toTopOf="@+id/cbit_mline1"
@@ -211,7 +210,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbit_materialblock">
+        app:layout_constraintTop_toBottomOf="@+id/cbit_materialblocks">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cbit_stepinblock"
