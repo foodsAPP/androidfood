@@ -53,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.LENGTH_LONG).show();
         Log.d(TAG,"服务器返回的token是:"+token);
         preference.saveUser(user,(String)token);
-        Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+        Intent intent=new Intent(LoginActivity.this,MuneActivity.class);
         startActivity(intent);
     }
 
