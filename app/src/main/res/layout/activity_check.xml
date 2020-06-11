@@ -7,7 +7,7 @@
     tools:context=".CheckActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cbit-coverblock"
+        android:id="@+id/cbit_coverblock"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/cookbookitem-cover"
+            android:id="@+id/cookbookitem_cover"
             android:layout_width="match_parent"
             android:layout_height="240dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -23,27 +23,27 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/cbit-backbuttom"
+            android:id="@+id/cbit_backbuttom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/cookbookitem-cover"
+            app:layout_constraintTop_toTopOf="@+id/cookbookitem_cover"
             app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cbit-titleblock"
+        android:id="@+id/cbit_titleblock"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbit-coverblock">
+        app:layout_constraintTop_toBottomOf="@+id/cbit_coverblock">
 
         <TextView
-            android:id="@+id/cbit-title"
+            android:id="@+id/cbit_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -57,7 +57,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/cbit-maked"
+            android:id="@+id/cbit_maked"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="32dp"
@@ -67,26 +67,26 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
-            android:id="@+id/cbit-num"
+            android:id="@+id/cbit_num"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="num"
             android:textColor="#000000"
-            app:layout_constraintEnd_toStartOf="@+id/cbit-maked"
-            app:layout_constraintTop_toTopOf="@+id/cbit-maked" />
+            app:layout_constraintEnd_toStartOf="@+id/cbit_maked"
+            app:layout_constraintTop_toTopOf="@+id/cbit_maked" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cbit-userblock"
+        android:id="@+id/cbit_userblock"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbit-titleblock">
+        app:layout_constraintTop_toBottomOf="@+id/cbit_titleblock">
 
         <ImageView
-            android:id="@+id/cbit-usercover"
+            android:id="@+id/cbit_usercover"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="32dp"
@@ -96,7 +96,7 @@
             app:srcCompat="@drawable/bg_head" />
 
         <TextView
-            android:id="@+id/cbit-username"
+            android:id="@+id/cbit_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -104,22 +104,22 @@
             android:text="用户名"
             android:textColor="#000000"
             android:textSize="12sp"
-            app:layout_constraintStart_toEndOf="@+id/cbit-usercover"
-            app:layout_constraintTop_toTopOf="@+id/cbit-usercover" />
+            app:layout_constraintStart_toEndOf="@+id/cbit_usercover"
+            app:layout_constraintTop_toTopOf="@+id/cbit_usercover" />
 
         <TextView
-            android:id="@+id/cbit-sharetime"
+            android:id="@+id/cbit_sharetime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="0000-00-00"
+            android:text="0000_00_00"
             android:textColor="#000000"
             android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="@+id/cbit-username"
-            app:layout_constraintTop_toBottomOf="@+id/cbit-username" />
+            app:layout_constraintStart_toStartOf="@+id/cbit_username"
+            app:layout_constraintTop_toBottomOf="@+id/cbit_username" />
 
         <Button
-            android:id="@+id/cbit-starbuttom"
+            android:id="@+id/cbit_starbuttom"
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginEnd="24dp"
@@ -133,15 +133,15 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cbit-materialblock"
+        android:id="@+id/cbit_materialblock"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbit-userblock">
+        app:layout_constraintTop_toBottomOf="@+id/cbit_userblock">
 
         <TextView
-            android:id="@+id/cbit-materialtext"
+            android:id="@+id/cbit_materialtext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -153,43 +153,43 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cbit-materialinblock"
+            android:id="@+id/cbit_materialinblock"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layout_constraintTop_toBottomOf="@+id/cbit-materialtext">
+            app:layout_constraintTop_toBottomOf="@+id/cbit_materialtext">
 
             <TextView
-                android:id="@+id/cbit-materialname"
+                android:id="@+id/cbit_materialname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
                 android:text="材料名"
-                app:layout_constraintBottom_toTopOf="@+id/cbit-mline1"
+                app:layout_constraintBottom_toTopOf="@+id/cbit_mline1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/cbit-materialdosage"
+                android:id="@+id/cbit_materialdosage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="48dp"
                 android:layout_marginBottom="8dp"
                 android:text="用量单位"
-                app:layout_constraintBottom_toTopOf="@+id/cbit-mline1"
+                app:layout_constraintBottom_toTopOf="@+id/cbit_mline1"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
-                android:id="@+id/cbit-materialnum"
+                android:id="@+id/cbit_materialnum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="数字"
-                app:layout_constraintEnd_toStartOf="@+id/cbit-materialdosage"
-                app:layout_constraintTop_toTopOf="@+id/cbit-materialdosage" />
+                app:layout_constraintEnd_toStartOf="@+id/cbit_materialdosage"
+                app:layout_constraintTop_toTopOf="@+id/cbit_materialdosage" />
 
             <View
-                android:id="@+id/cbit-mline1"
+                android:id="@+id/cbit_mline1"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginStart="24dp"
@@ -205,16 +205,16 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cbit-stepblock"
+        android:id="@+id/cbit_stepblock"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbit-materialblock">
+        app:layout_constraintTop_toBottomOf="@+id/cbit_materialblock">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cbit-stepinblock"
+            android:id="@+id/cbit_stepinblock"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -222,7 +222,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/cbit-steptext"
+                android:id="@+id/cbit_steptext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -234,17 +234,17 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/cbit-stepnum"
+                android:id="@+id/cbit_stepnum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="数字"
                 android:textColor="#000000"
                 android:textSize="16sp"
-                app:layout_constraintStart_toEndOf="@+id/cbit-steptext"
-                app:layout_constraintTop_toTopOf="@+id/cbit-steptext" />
+                app:layout_constraintStart_toEndOf="@+id/cbit_steptext"
+                app:layout_constraintTop_toTopOf="@+id/cbit_steptext" />
 
             <AutoCompleteTextView
-                android:id="@+id/cbit-stepconent"
+                android:id="@+id/cbit_stepconent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="48dp"
@@ -255,20 +255,20 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cbit-stepnum" />
+                app:layout_constraintTop_toBottomOf="@+id/cbit_stepnum" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cbit-starblock"
+            android:id="@+id/cbit_starblock"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cbit-stepinblock">
+            app:layout_constraintTop_toBottomOf="@+id/cbit_stepinblock">
 
             <ImageView
-                android:id="@+id/cbit-star1"
+                android:id="@+id/cbit_star1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="@+id/textView14"
@@ -287,16 +287,17 @@
                 app:layout_constraintTop_toTopOf="@+id/textView17" />
 
             <ImageView
-                android:id="@+id/cbit-thumbimg1"
+                android:id="@+id/cbit_thumbimg1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/cbit-thumbnum1"
-                app:layout_constraintEnd_toStartOf="@+id/cbit-thumbnum1"
-                app:layout_constraintTop_toTopOf="@+id/cbit-thumbnum1"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cbit_thumbnum1"
+                app:layout_constraintEnd_toStartOf="@+id/cbit_thumbnum1"
+                app:layout_constraintTop_toTopOf="@+id/cbit_thumbnum1"
                 app:srcCompat="@drawable/ic_thumb_up_black_24dp" />
 
             <TextView
-                android:id="@+id/cbit-thumb1"
+                android:id="@+id/cbit_thumb1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -310,14 +311,14 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/cbit-thumbnum1"
+                android:id="@+id/cbit_thumbnum1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="num"
                 android:textColor="#000000"
                 android:textSize="12sp"
-                app:layout_constraintEnd_toStartOf="@+id/cbit-thumb1"
-                app:layout_constraintTop_toTopOf="@+id/cbit-thumb1" />
+                app:layout_constraintEnd_toStartOf="@+id/cbit_thumb1"
+                app:layout_constraintTop_toTopOf="@+id/cbit_thumb1" />
 
             <TextView
                 android:id="@+id/textView17"
@@ -327,8 +328,8 @@
                 android:text="收藏"
                 android:textColor="#000000"
                 android:textSize="12sp"
-                app:layout_constraintEnd_toStartOf="@+id/cbit-thumbimg1"
-                app:layout_constraintTop_toTopOf="@+id/cbit-thumbnum1" />
+                app:layout_constraintEnd_toStartOf="@+id/cbit_thumbimg1"
+                app:layout_constraintTop_toTopOf="@+id/cbit_thumbnum1" />
 
             <View
                 android:id="@+id/stepline"
@@ -345,13 +346,13 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cbit-commentblock"
+        android:id="@+id/cbit_commentblock"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/cbit-stepblock">
+        app:layout_constraintTop_toBottomOf="@+id/cbit_stepblock">
 
         <TextView
-            android:id="@+id/cbit-commenttext"
+            android:id="@+id/cbit_commenttext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -363,16 +364,16 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cbit-commentoneblock"
+            android:id="@+id/cbit_commentoneblock"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cbit-commenttext">
+            app:layout_constraintTop_toBottomOf="@+id/cbit_commenttext">
 
             <ImageView
-                android:id="@+id/cbit-commentuserimg"
+                android:id="@+id/cbit_commentuserimg"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="48dp"
@@ -381,48 +382,48 @@
                 app:srcCompat="@drawable/bg_head" />
 
             <TextView
-                android:id="@+id/cbit-commentusername"
+                android:id="@+id/cbit_commentusername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="用户名"
                 android:textColor="#000000"
                 android:textSize="12sp"
-                app:layout_constraintStart_toEndOf="@+id/cbit-commentuserimg"
-                app:layout_constraintTop_toTopOf="@+id/cbit-commentuserimg" />
+                app:layout_constraintStart_toEndOf="@+id/cbit_commentuserimg"
+                app:layout_constraintTop_toTopOf="@+id/cbit_commentuserimg" />
 
             <TextView
-                android:id="@+id/cbit-commenttime"
+                android:id="@+id/cbit_commenttime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="0000-00-00"
+                android:text="0000_00_00"
                 android:textColor="#000000"
                 android:textSize="10sp"
-                app:layout_constraintStart_toStartOf="@+id/cbit-commentusername"
-                app:layout_constraintTop_toBottomOf="@+id/cbit-commentusername" />
+                app:layout_constraintStart_toStartOf="@+id/cbit_commentusername"
+                app:layout_constraintTop_toBottomOf="@+id/cbit_commentusername" />
 
             <ImageView
-                android:id="@+id/cbit-commnetthmub"
+                android:id="@+id/cbit_commnetthmub"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/cbit-commentthmubnum"
-                app:layout_constraintEnd_toStartOf="@+id/cbit-commentthmubnum"
-                app:layout_constraintTop_toTopOf="@+id/cbit-commentthmubnum"
+                app:layout_constraintBottom_toBottomOf="@+id/cbit_commentthmubnum"
+                app:layout_constraintEnd_toStartOf="@+id/cbit_commentthmubnum"
+                app:layout_constraintTop_toTopOf="@+id/cbit_commentthmubnum"
                 app:srcCompat="@drawable/ic_thumb_up_black_24dp" />
 
             <TextView
-                android:id="@+id/cbit-commentthmubnum"
+                android:id="@+id/cbit_commentthmubnum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="num"
                 android:textColor="#000000"
                 android:textSize="12sp"
-                app:layout_constraintEnd_toStartOf="@+id/cbir-commentthumbtext"
-                app:layout_constraintTop_toTopOf="@+id/cbir-commentthumbtext" />
+                app:layout_constraintEnd_toStartOf="@+id/cbir_commentthumbtext"
+                app:layout_constraintTop_toTopOf="@+id/cbir_commentthumbtext" />
 
             <TextView
-                android:id="@+id/cbir-commentthumbtext"
+                android:id="@+id/cbir_commentthumbtext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -434,7 +435,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/cbit-commentcontent"
+                android:id="@+id/cbit_commentcontent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -443,8 +444,8 @@
                 android:textColor="#000000"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/cbit-commenttime"
-                app:layout_constraintTop_toBottomOf="@+id/cbit-commenttime" />
+                app:layout_constraintStart_toStartOf="@+id/cbit_commenttime"
+                app:layout_constraintTop_toBottomOf="@+id/cbit_commenttime" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

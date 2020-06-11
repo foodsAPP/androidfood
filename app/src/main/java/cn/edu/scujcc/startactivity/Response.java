@@ -40,7 +40,7 @@ public class Response<T> implements List<Comment> {
 		result.setMessage("操作成功");
 		return result;
 	}
-	
+
 	public Response<T> error() {
 		Response<T> result=new Response<T>();
 		result.setStatus(STATUS_ERROR);
