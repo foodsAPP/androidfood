@@ -133,15 +133,9 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-<<<<<<< HEAD
-        android:id="@+id/cbit_materialblocks"
-=======
-        android:id="@+id/cbit_materialmianblock"
->>>>>>> 4c37aa04cb7e0c4bf0fc455176ea4ae457025cf1
+        android:id="@+id/cbit_materialmainblock"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbit_userblock">
 
         <TextView
@@ -149,7 +143,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
             android:text="材料"
             android:textColor="#000000"
             android:textSize="16sp"
@@ -163,13 +157,13 @@
             app:layout_constraintTop_toBottomOf="@+id/cbit_materialtext">
 
             <TextView
-                android:id="@+id/cbit_materialname"
+                android:id="@+id/cbit_material1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginBottom="8dp"
-                android:text="材料名"
-                app:layout_constraintBottom_toTopOf="@+id/cbit_mline1"
+                android:layout_marginTop="16dp"
+                android:text="具体材料"
+                android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -177,32 +171,32 @@
                 android:id="@+id/cbit_materialdosage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="48dp"
-                android:layout_marginBottom="8dp"
-                android:text="用量单位"
-                app:layout_constraintBottom_toTopOf="@+id/cbit_mline1"
-                app:layout_constraintEnd_toEndOf="parent" />
+                android:layout_marginEnd="32dp"
+                android:text="单位"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cbit_material1" />
 
             <TextView
-                android:id="@+id/cbit_materialnum"
+                android:id="@+id/cbit_materdosagenum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="数字"
+                android:text="num"
+                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/cbit_materialdosage"
                 app:layout_constraintTop_toTopOf="@+id/cbit_materialdosage" />
 
             <View
-                android:id="@+id/cbit_mline1"
+                android:id="@+id/view"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
                 android:background="@drawable/dash_line"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cbit_material1" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -214,11 +208,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintTop_toBottomOf="@+id/cbit_materialblocks">
-=======
+        app:layout_constraintTop_toBottomOf="@+id/cbit_materialmainblock">
         app:layout_constraintTop_toBottomOf="@+id/cbit_materialmianblock">
->>>>>>> 4c37aa04cb7e0c4bf0fc455176ea4ae457025cf1
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cbit_stepinblock"
